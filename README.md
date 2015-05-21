@@ -157,7 +157,7 @@ For multi-select inputs, when providing a custom `filterOptions` method, remembe
 	name 				|	string		|	 field name, for hidden <input /> tag |  undefined
 	onChange 			|	func		|	 onChange handler: function(newValue) {} |  undefined
 	onFocus 			|	func		|	 onFocus handler: function(event) {} |  undefined
-	onBlur 				|	func		|	 onBlur handler: function(event) {} |  undfined
+	onBlur 				|	func		|	 onBlur handler: function(event) {} |  undefined
 	className 			|	string		|	 className for the outer element |  undefined
 	filterOption 		|	func		|	 method to filter a single option: function(option, filterString) |  undefined
 	filterOptions 		|	func		|	 method to filter the options array: function([options], filterString, [values]) |  undefined
