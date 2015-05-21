@@ -138,32 +138,33 @@ For multi-select inputs, when providing a custom `filterOptions` method, remembe
 ### Further options
 
 
-	Property			|	Type		|	Description
-:-----------------------|:--------------|:--------------------------------
-	value 				|	any			|	 initial field value
-	multi 				|	bool		|	 multi-value input
-	disabled 			|	bool		|	 whether the Select is disabled or not
-	options 			|	array		|	 array of options
-	delimiter 			|	string		|	 delimiter to use to join multiple values
-	asyncOptions 		|	func		|	 function to call to get options
-	autoload 			|	bool		|	 whether to auto-load the default async options set
-	placeholder 		|	string		|	 field placeholder, displayed when there's no value
-	noResultsText 		|	string		|	 placeholder displayed when there are no matching search results
-	clearable 			|	bool		|	 should it be possible to reset value
-	clearValueText 		|	string		|	 title for the "clear" control
-	clearAllText 		|	string		|	 title for the "clear" control when multi: true
-	searchable 			|	bool		|	 whether to enable searching feature or not
-	searchPromptText 	|	string		|	 label to prompt for search input
-	name 				|	string		|	 field name, for hidden <input /> tag
-	onChange 			|	func		|	 onChange handler: function(newValue) {}
-	onFocus 			|	func		|	 onFocus handler: function(event) {}
-	onBlur 				|	func		|	 onBlur handler: function(event) {}
-	className 			|	string		|	 className for the outer element
-	filterOption 		|	func		|	 method to filter a single option: function(option, filterString)
-	filterOptions 		|	func		|	 method to filter the options array: function([options], filterString, [values])
-	matchPos 			|	string		|	 (any, start) match the start or entire string when filtering
-	matchProp 			|	string		|	 (any, label, value) which option property to filter on
-	inputProps 			|	object		|	 custom attributes for the Input (in the Select-control) e.g: {'data-foo': 'bar'}
+	Property			|	Type		|	Description | Default
+:-----------------------|:--------------|:--------------------------------|:-----------
+	value 				|	any			|	 initial field value |  `undefined`
+	multi 				|	bool		|	 multi-value input |  `false`
+	disabled 			|	bool		|	 whether the Select is disabled or not |  `false`
+	options 			|	array		|	 array of options |  `undefined`
+	delimiter 			|	string		|	 delimiter to use to join multiple values |  `,`
+	asyncOptions 		|	func		|	 function to call to get options |  `undefined`
+	autoload 			|	bool		|	 whether to auto-load the default async options set |  `true`
+	placeholder 		|	string		|	 field placeholder, displayed when there's no value |  `Select...`
+	noResultsText 		|	string		|	 placeholder displayed when there are no matching search results |  `No results found`
+	clearable 			|	bool		|	 should it be possible to reset value |  `true`
+	clearValueText 		|	string		|	 title for the "clear" control |  `Clear value`
+	clearAllText 		|	string		|	 title for the "clear" control when multi: true |  `Clear all`
+	searchable 			|	bool		|	 whether to enable searching feature or not |  `true`
+	searchPromptText 	|	string		|	 label to prompt for search input |  `Type to search`
+	name 				|	string		|	 field name, for hidden <input /> tag |  `undefined`
+	onChange 			|	func		|	 onChange handler: function(newValue) {} |  `undefined`
+	onFocus 			|	func		|	 onFocus handler: function(event) {} |  `undefined`
+	onBlur 				|	func		|	 onBlur handler: function(event) {} |  `undfined`
+	className 			|	string		|	 className for the outer element |  `undefined`
+	filterOption 		|	func		|	 method to filter a single option: function(option, filterString) |  `undefined`
+	filterOptions 		|	func		|	 method to filter the options array: function([options], filterString, [values]) |  `undefined`
+	matchPos 			|	string		|	 (any, start) match the start or entire string when filtering |  `any`
+	matchProp 			|	string		|	 (any, label, value) which option property to filter on |  `any`
+	inputProps 			|	object		|	 custom attributes for the Input (in the Select-control) e.g: {'data-foo': 'bar'} |  `{}`
+  allowCreate     | bool    | |  `false`
 
 
 # Contributing
